@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Погода</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tabs">
+        <button id="todayTab" class="tab-button active" onclick="openTab('today')">Сегодня</button>
+        <button id="forecastTab" class="tab-button" onclick="openTab('forecast')">5-day forecast</button>
+    </div>
+
+    <div id="today" class="tab-content">
+        <h2>Погода сегодня</h2>
+        <div id="citySearch">
+            <input type="text" id="cityInput" placeholder="Введите город">
+            <button id="searchButton" onclick="searchWeather()">Поиск</button>
+        </div>
+        <div id="currentWeather">
+        </div>
+        <div id="otherWeather">
+        </div>
+        <div id="popularCities">
+        </div>
+    </div>
+
+    <div id="forecast" class="tab-content">
+        <h2>Прогноз на 5 дней</h2>
+        <div id="forecastCity">
+            <input type="text" id="forecastCityInput" placeholder="Введите город для прогноза на 5 дней">
+            <button id="forecastSearchButton" onclick="searchFiveDayForecast()">Поиск</button>
+        </div>
+        <div id="forecastCards">
+        </div>
+        <div id="detailedForecast">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

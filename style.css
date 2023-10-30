@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.tabs {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tab-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background-color: #45a049;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+#citySearch {
+    margin: 20px 0;
+}
+
+#cityInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#searchButton {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#currentWeather, #otherWeather, #popularCities {
+    margin-top: 20px;
+}
+
+#forecastCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.forecast-card {
+    width: 19%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+#detailedForecast {
+    margin-top: 20px;
+}
+
